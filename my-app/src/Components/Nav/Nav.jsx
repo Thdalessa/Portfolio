@@ -12,8 +12,8 @@ export default function Nav() {
         <NavItem href="#about-me">About Me</NavItem>
         <NavItem href="#skills">Skills</NavItem>
         <NavItem href="#projects">Projects</NavItem>
-        <NavItem>Certificates</NavItem>
-        <NavItem>Contact Me</NavItem>
+        <NavItem href="#certificates">Certificates</NavItem>
+        <NavItem href="#contact-me">Contact Me</NavItem>
       </Navigator>
     </NavMenu>
   );

@@ -4,6 +4,7 @@ import {
   Slide,
   ControlLeft,
   ControlRight,
+  ProjectTitle,
   Title,
   ButtonContainer,
   Button,
@@ -98,6 +99,7 @@ export default function Projects() {
   };
   return (
     <FirstContainer id="projects">
+      <Title>Projects</Title>
       {projects.map((el) => {
         if (el.id === isDisplayed) {
           return (
@@ -106,7 +108,7 @@ export default function Projects() {
                 <AiOutlineArrowLeft />
               </ControlLeft>
               <ProjectImage src={el.img} />
-              <Title>{el.name}</Title>
+              <ProjectTitle>{el.name}</ProjectTitle>
               <ButtonContainer>
                 <ButtonSubContainer>
                   <ButtonTitle>Code</ButtonTitle>

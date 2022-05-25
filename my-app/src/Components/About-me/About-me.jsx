@@ -15,6 +15,7 @@ import {
   ResumeButton,
 } from "./styled";
 import foto from "../../assets/Foto-th.png";
+import CV from "../../assets/CurriculumVitae.pdf";
 
 export default function AboutMe() {
   return (
@@ -29,11 +30,16 @@ export default function AboutMe() {
           <Footer>Full Stack Web Developer</Footer>
         </TextContainer>
         <Links>
-          <GoButton href="https://github.com/Thdalessa">
+          <GoButton target={"_blank"} href="https://github.com/Thdalessa">
             <GitHub />
           </GoButton>
-          <ResumeButton>Resume</ResumeButton>
-          <GoButton href="https://www.linkedin.com/in/thiagodalessandro/">
+          <ResumeButton download={"ThiagoDalessandroCV"} href={CV}>
+            Resume
+          </ResumeButton>
+          <GoButton
+            target={"_blank"}
+            href="https://www.linkedin.com/in/thiagodalessandro/"
+          >
             <LinkedIn />
           </GoButton>
         </Links>

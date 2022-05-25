@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import logo from "../../assets/Logo.png";
 
 export const NavMenu = styled.nav`
   width: 100%;
@@ -11,6 +9,10 @@ export const NavMenu = styled.nav`
   align-items: center;
   position: fixed;
   z-index: 10;
+  @media screen and (max-width: 760px) {
+    height: 100px;
+    flex-direction: column;
+  }
 `;
 
 export const HomeButton = styled.a`
@@ -29,6 +31,10 @@ export const HomeButton = styled.a`
     box-shadow: inset 300px 0 0 0 #f72585;
     cursor: pointer;
   }
+  @media screen and (max-width: 460px) {
+    margin-top: 20px;
+    height: 60px;
+  }
 `;
 
 export const Navigator = styled.div`
@@ -39,6 +45,20 @@ export const Navigator = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media screen and (max-width: 1120px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 900px) {
+    width: 60%;
+  }
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 460px) {
+    display: none;
+    visibility: none;
+  }
 `;
 
 export const NavItem = styled.a`
