@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
   FirstContainer,
@@ -91,7 +91,7 @@ const FormEmail = () => {
           required
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="Winter is coming"
+          placeholder="Winter is coming..."
         ></TextArea>
       </ContactFieldMessage>
       <MailIcon />
