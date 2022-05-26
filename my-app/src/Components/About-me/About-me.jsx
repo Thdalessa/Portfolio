@@ -14,10 +14,24 @@ import {
   GoButton,
   ResumeButton,
 } from "./styled";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import foto from "../../assets/Foto-th.png";
 import CV from "../../assets/CurriculumVitae.pdf";
 
 export default function AboutMe() {
+  const handleClick = () => {
+    toast("Resume downloaded", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
   return (
     <FirstContainer id="intro">
       <InfoContainer>
@@ -33,7 +47,11 @@ export default function AboutMe() {
           <GoButton target={"_blank"} href="https://github.com/Thdalessa">
             <GitHub />
           </GoButton>
-          <ResumeButton download={"ThiagoDalessandroCV"} href={CV}>
+          <ResumeButton
+            onClick={handleClick}
+            download={"ThiagoDalessandroCV"}
+            href={CV}
+          >
             Resume
           </ResumeButton>
           <GoButton

@@ -112,14 +112,14 @@ export default function Projects() {
               <ButtonContainer>
                 <ButtonSubContainer>
                   <ButtonTitle>Code</ButtonTitle>
-                  <Button href={el.code}>
+                  <Button href={el.code} target={"_blank"}>
                     <BsGithub />
                   </Button>
                 </ButtonSubContainer>
                 {el.deploy ? (
                   <ButtonSubContainer>
                     <ButtonTitle>Deploy</ButtonTitle>
-                    <Button href={el.deploy}>
+                    <Button href={el.deploy} target={"_blank"}>
                       <BiRocket />
                     </Button>
                   </ButtonSubContainer>
